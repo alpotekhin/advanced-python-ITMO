@@ -1,0 +1,18 @@
+--> python nl.py
+Enter text (Ctrl-Z to stop):
+first
+1       first
+second
+2       second
+third
+3       third
+^Z
+
+=====================================
+
+--> python nl.py .\sample.txt
+1       This is the first line
+2       This is the second line
+3       This is the third line
+4
+5       This is the fifth line
