@@ -21,3 +21,21 @@ def generate_latex_table(data):
 
     return latex
 
+def generate_latex_figure(image_path, caption="Figure"):
+    """
+    Generates LaTeX code to include an image.
+
+    Parameters:
+    image_path (str): The path to the image file.
+    caption (str): The caption for the figure.
+
+    Returns:
+    str: A string containing the LaTeX code to include the image.
+    """
+    latex = f"""\\begin{{figure}}[ht]
+\\centering
+\\includegraphics[width=0.8\\textwidth]{{{image_path}}}
+\\caption{{{caption}}}
+\\end{{figure}}
+"""
+    return latex

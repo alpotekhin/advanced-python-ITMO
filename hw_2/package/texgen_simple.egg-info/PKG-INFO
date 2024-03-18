@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: texgen_simple
+Version: 0.1
+Summary: A LaTeX utility library for tables and figures
+Author: alpotekhin
+Author-email: pyteching@example.com
+License: MIT

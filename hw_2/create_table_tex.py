@@ -1,4 +1,4 @@
-from latex_gen import generate_latex_table
+from texgen_simple.latex_gen import generate_latex_table
 
 # Data example
 data = [
@@ -10,5 +10,5 @@ data = [
 
 latex_code = generate_latex_table(data)
 
-with open("artifacts/example_table.tex", "w") as file:
+with open("hw_2/artifacts/example_table.tex", "w") as file:
     file.write(latex_code)
