@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+texgen_simple/__init__.py
+texgen_simple/latex_gen.py
+texgen_simple.egg-info/PKG-INFO
+texgen_simple.egg-info/SOURCES.txt
+texgen_simple.egg-info/dependency_links.txt
+texgen_simple.egg-info/not-zip-safe
+texgen_simple.egg-info/top_level.txt

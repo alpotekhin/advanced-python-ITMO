@@ -1,0 +1,24 @@
+alpo@DESKTOP-72QMKDJ:/mnt/c/repos/advanced-python-ITMO$ docker build -f hw_2/Dockerfile -t latex-pdf-generator .
+[+] Building 29.0s (16/16) FINISHED                                                                      docker:default
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 1.26kB                                                                             0.0s
+ => [internal] load metadata for docker.io/library/python:3.8-slim                                                 0.5s
+ => [ 1/11] FROM docker.io/library/python:3.8-slim@sha256:e796941013b10bb53a0924d8705485a1afe654bbbc6fe71d3250910  0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 858B                                                                                  0.0s
+ => CACHED [ 2/11] RUN apt-get update &&     apt-get install -y --no-install-recommends texlive-latex-base texliv  0.0s
+ => CACHED [ 3/11] WORKDIR /app                                                                                    0.0s
+ => CACHED [ 4/11] COPY hw_2/create_figure.py /app/create_figure.py                                                0.0s
+ => CACHED [ 5/11] COPY hw_2/artifacts/image.png /app/image.png                                                    0.0s
+ => [ 6/11] RUN mkdir -p /app/hw_2/artifacts                                                                       0.3s
+ => [ 7/11] RUN pip install -i https://test.pypi.org/simple/ texgen-simple                                         2.4s
+ => [ 8/11] RUN python create_figure.py                                                                            0.5s
+ => [ 9/11] RUN ls -la /app/hw_2/artifacts                                                                         0.6s
+ => [10/11] RUN pdflatex -output-directory=/app/hw_2/artifacts /app/hw_2/artifacts/example_figure.tex              0.8s
+ => [11/11] RUN pdflatex -output-directory=/app/hw_2/artifacts /app/hw_2/artifacts/example_figure.tex              0.7s
+ => exporting to image                                                                                            23.0s
+ => => exporting layers                                                                                           23.0s
+ => => writing image sha256:66971810a9e4fc6ad3e75c08e6c7f5d20164f56c660861f72dc21126ce64dc3a                       0.0s
+ => => naming to docker.io/library/latex-pdf-generator                                                             0.0s

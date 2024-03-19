@@ -1,0 +1,14 @@
+name = "texgen_simple"
+version = "0.1"
+authors = [
+  { name="alpotekhin", email="pyteching@gmail.com" },
+]
+description = "A LaTeX utility library for tables and figures"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
