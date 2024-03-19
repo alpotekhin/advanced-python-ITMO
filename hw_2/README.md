@@ -2,10 +2,10 @@
 
 ## `table_gen` 
 
-[Code]() | [Artifacts]()
+[Code](https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/package/texgen_simple/latex_gen.py) | [Artifacts](https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/artifacts/example_figure.tex)
 
 ## `package`
-[Code]() | [Artifacts]()
+[Code](https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/create_figure.py) | [Artifacts](https://test.pypi.org/project/texgen-simple/#description | https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/artifacts/image.pdf)
 
 ## `Dockerfile`
-[Code]() | [Artifacts]()
+[Code](https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/Dockerfile) | [Artifacts](https://github.com/alpotekhin/advanced-python-ITMO/blob/master/hw_2/artifacts/docker_logs.txt)
